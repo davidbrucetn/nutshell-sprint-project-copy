@@ -1,0 +1,284 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "userName": "davidbruce",
+      "email": "severian37@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 1,
+      "userName": "testuser1",
+      "email": "dummyemail@yahoo.com",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "userName": "testuser2",
+      "email": "dummyemail2@yahoo.com",
+      "password": "password"
+    },
+    {
+      "email": "engine_ear@mac.com",
+      "userName": "Patrick Murphy",
+      "password": "dork",
+      "id": 3
+    },
+    {
+      "email": "dorkus@dorkmail.drk",
+      "userName": "Dorks' world",
+      "password": "dork",
+      "id": 4
+    },
+    {
+      "email": "moreEmail@email.dork",
+      "userName": "Wally",
+      "password": "world",
+      "id": 5
+    },
+    {
+      "email": "homeboy@murder.net",
+      "userName": "killa",
+      "password": "bang",
+      "id": 6
+    },
+    {
+      "email": "emailguy@mail.chump",
+      "userName": "chump",
+      "password": "dude",
+      "id": 7
+    },
+    {
+      "email": "mrbill@yahoo.com",
+      "userName": "mrbill",
+      "password": "password",
+      "id": 8
+    }
+  ],
+  "friends": [
+    {
+      "id": 0,
+      "userId": 1,
+      "activeUserId": 2,
+      "date": "2020-06-26T17:58:57.776Z"
+    }
+  ],
+  "messages": [
+    {
+      "userId": 0,
+      "message": "Why is this called nutshell?",
+      "date": "2020-06-26T17:58:57.776Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "message": "Nuttybuddy1",
+      "date": "2020-06-27T17:57:13.722Z",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "message": "Nuttybuddy2 says hi",
+      "date": "2020-06-28T18:31:39.122Z",
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "message": "Hello again twice",
+      "date": "2020-06-30T19:27:01.814Z",
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "message": "Still working?",
+      "date": "2020-06-30T19:34:48.472Z",
+      "id": 5
+    },
+    {
+      "userId": 5,
+      "message": "",
+      "date": "2020-06-30T21:09:00.404Z",
+      "id": 6
+    },
+    {
+      "userId": 6,
+      "message": "Boom",
+      "date": "2020-06-30T21:10:30.983Z",
+      "id": 7
+    },
+    {
+      "userId": 7,
+      "message": "Bruh!",
+      "date": "2020-06-30T21:12:22.503Z",
+      "id": 8
+    },
+    {
+      "userId": 8,
+      "message": "test",
+      "date": "2020-07-01T20:22:10.627Z",
+      "id": 9
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "userId": 3,
+      "url": "https://www.nytimes.com/2020/06/26/science/exploration-coral-sea.html",
+      "title": "Great Wonders Beyond the Reef",
+      "synopsis": "A recent expedition to the inky depths of the Coral Sea revealed an unknown world of creatures and geologic features",
+      "timestamp": "2020-06-01"
+    },
+    {
+      "id": 2,
+      "userId": 0,
+      "url": "https://www.newyorker.com/magazine/2017/03/27/daniel-dennetts-science-of-the-soul",
+      "title": "Daniel Dennett's Science of the Soul",
+      "synopsis": "A philosopher's lifelong quest to understand the making of the mind.",
+      "timestamp": "2020-06-18"
+    },
+    {
+      "userId": 3,
+      "title": "News4Jax Amazon Shooting",
+      "synopsis": "1 killed, 2 shot outside Amazon warehouse in Jacksonville",
+      "url": "https://www.news4jax.com/news/local/2020/06/29/1-person-shot-outside-amazon-warehouse-in-jacksonville/",
+      "timestamp": "2020-06-29T22:31:49.806Z",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "title": "Multistate Disagreement over the Length of the Foot to End",
+      "synopsis": "In 2023 every U.S. land surveyor will begin using a single international standard",
+      "url": "https://www.scientificamerican.com/article/multistate-disagreement-over-the-length-of-the-foot-to-end/",
+      "timestamp": "2020-06-30T00:09:42.747Z",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "title": "The World Doesn't Need a New Gigantic Particle Collider",
+      "synopsis": "It would cost many billions of dollars, the potential rewards are unclear—and the money could be better spent researching threats such as climate change and emerging viruses",
+      "url": "https://www.scientificamerican.com/article/the-world-doesnt-need-a-new-gigantic-particle-collider/",
+      "timestamp": "2020-06-30T00:19:28.453Z",
+      "id": 5
+    },
+    {
+      "userId": 8,
+      "title": "Firefly Aerospace uses rocket engine to light birthday candles in epic cake video",
+      "synopsis": "Rocket lights candles",
+      "url": "https://www.space.com/firefly-aerospace-lights-birthday-cake-with-rocket-engine-video.html",
+      "timestamp": "2020-06-30T23:06:12.019Z",
+      "id": 6
+    },
+    {
+      "userId": 8,
+      "title": "Signal from 500 million light years away is the first periodic pattern of radio bursts detected.",
+      "synopsis": "Astronomers detect regular rhythm of radio waves, with origins unknown",
+      "url": "http://news.mit.edu/2020/astronomers-rhythm-radio-waves-0617",
+      "timestamp": "2020-06-30T23:12:23.933Z",
+      "id": 7
+    },
+    {
+      "userId": 8,
+      "title": "Capturing stardust",
+      "synopsis": "an instrument to study how the heaviest elements in the universe are produced",
+      "url": "http://news.mit.edu/2020/capturing-stardust-danielle-frostig-mit-kavli-0612",
+      "timestamp": "2020-06-30T23:15:54.286Z",
+      "id": 8
+    },
+    {
+      "userId": 8,
+      "title": "blah blah covid-19 blah",
+      "synopsis": "Wear a mask, Karen",
+      "url": "https://www.cdc.gov/coronavirus/2019-ncov/index.html",
+      "timestamp": "2020-07-01T19:36:27.663Z",
+      "id": 10
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "userId": 3,
+      "name": "Nashville Pride",
+      "date": "2020-06-01",
+      "location": "Nashville, Tennessee"
+    },
+    {
+      "userId": 0,
+      "name": "Vienna Philharmonic - Muti",
+      "date": "2020-08-15",
+      "location": "Salzburg, Austria Festspielhaus",
+      "id": 2
+    },
+    {
+      "userId": 0,
+      "name": "Chihuly at Cheekwood",
+      "date": "2020-07-18",
+      "location": "Nashville, TN",
+      "id": 3
+    },
+    {
+      "userId": 8,
+      "name": "Vienna Philharmonic - Holst",
+      "date": "2020-08-22",
+      "location": "Salzburg, Austria",
+      "id": 5
+    },
+    {
+      "userId": 8,
+      "name": "FRANKLIN FARMERS MARKET",
+      "date": "2020-07-04",
+      "location": "Franklin Factory",
+      "id": 6
+    },
+    {
+      "userId": 8,
+      "name": "test it again",
+      "date": "2020-07-02",
+      "location": "",
+      "id": 7
+    },
+    {
+      "userId": 8,
+      "name": "test event",
+      "date": "2020-08-18",
+      "location": "Franklin, tn",
+      "id": 8
+    }
+  ],
+  "tasks": [
+    {
+      "userId": 8,
+      "task": "Wash the car",
+      "completionDate": "2020-07-04",
+      "complete": true,
+      "id": 1
+    },
+    {
+      "userId": 0,
+      "task": "Wash my (David Bruce's) car",
+      "completionDate": "2020-07-17",
+      "complete": false,
+      "id": 2
+    },
+    {
+      "userId": 8,
+      "task": "Wash Mr. Bill's car with fancy soap",
+      "completionDate": "2020-07-04",
+      "complete": false,
+      "id": 3
+    },
+    {
+      "userId": 8,
+      "task": "Check the functionality",
+      "completionDate": "2020-07-01",
+      "complete": false,
+      "id": 4
+    },
+    {
+      "userId": 8,
+      "task": "Test Task",
+      "completionDate": "2020-07-02",
+      "complete": false,
+      "id": 5
+    }
+  ]
+}

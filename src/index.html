@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Layout by David Bruce -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/87c551d281.js" crossorigin="anonymous"></script>
+    <title>Nutshell Community Portal</title>
+</head>
+<body class="body__nutshell__portal">
+    <header class="banner header">
+           <h1 class="banner__header">Nutshell Community Portal</h1>
+    </header>
+    <div class="container__form__login">
+        <div class="container__form__frost">
+            <div class="div__form__login">
+                <form class="form__login">
+                    <fieldset>
+                        <label for="email">Email: </label>
+                        <input type="text" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <label for="userName">Username: </label>
+                        <input type="text" id="userName">
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password">
+                    </fieldset>
+                    <fieldset>
+                        <label for="password2">Re-enter Password:</label>
+                        <input type="password" id="password2">
+                    </fieldset>
+                    <div class="form__login__buttons">
+                        <input type="button" id="registerButton" value="Register">
+                        <input type="button" id="logInButton" value="Sign In">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main class="container__main gradient hidden" >
+        <img src="images/acorn-acorns-autumn-oak-nature-forest-fall-season-plant.jpg">
+        <div class="container__main__left">
+            <div class="messages__header">
+                    <label for="add__dropdown">Add an Item</label>
+                    <select id="add__dropdown" class="select__box">
+                        <option value="0">Select an Item</option>
+                        <option value="event">Event</option>
+                        <option value="friend">Friend</option>
+                        <option value="message">Message</option>
+                        <option value="news">News</option>
+                        <option value="task">Task</option>
+                    </select>
+                 </div>
+            <div class="container__main__left--messages">
+
+
+                 <!-- fields here -->
+            </div>
+            <div class="container__messages--saved scrollDiv">
+                <!-- Message Card HTML Ends Here -->
+            </div>
+         
+        </div> <!-- End container main left -->
+        
+        <div class="container__main__middle">
+         <div class="news__header">
+             News Articles 
+             </div>
+         <div class="container__main__middle--news scrollDiv">
+           
+           
+         </div> <!-- End news container -->
+         <div class="friends__header">
+             Friends 
+             </div>
+            <div class="container__main__middle--friends scrollDiv">
+            
+            </div> <!-- End friends container -->
+        </div> <!-- End middle container -->
+        
+        <div class="container__main__right">
+         <div class="events__header scrollDiv">
+             Events 
+             </div>
+         <div class="container__main__right--events scrollDiv">
+             <!-- Events Card HTML Starts Here-->
+           
+            <!-- Events Card HTML Ends Here-->    
+         </div> <!-- End events container -->
+         <div class="tasks__header">
+             Tasks 
+             </div>
+
+         <div class="container__main__right--tasks scrollDiv">
+             <!-- Task Card HTML Starts Here-->
+
+           
+            <!-- Task Card HTML Ends Here-->
+         </div> <!-- End tasks container -->
+
+        </div> <!-- End middle container -->
+        
+    </main>
+
+    <div class="container__footer ">
+        <footer class="footer body__footer">
+            <div class="body__footer">
+                <div class="footer__text">
+                    <button class="button__footer__logout hidden" id="button__footer__logout">Logout</button>
+                    <p class="paragraph__footer__copyright">Copyright  @ 2020 Last Rose of Summer Design & Development - All Rights Reserved</p>
+                    <p class="paragraph__footer__copyright">Patrick Murphy ◈ John Hester ◈ David Bruce</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <article id="container"></article>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>

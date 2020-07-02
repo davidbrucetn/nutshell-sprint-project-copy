@@ -1,0 +1,529 @@
+/* main.css for Nutshell
+   David Bruce */
+
+html, body {
+    height: 98%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+  }
+
+
+/* Header Section */
+.header {
+position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:5vw;
+  min-height:100px;
+  max-height:550px;
+  min-width:300px;
+  color:#eee;
+}
+
+.header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(149, 126, 204, 0.12) 40%,rgb(21, 24, 54) 100%);
+}
+
+.header:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale:(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(../images/header_farmtotable.jpg) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+
+.header a{
+  color:#eee
+}
+
+
+/* Login/Registration Screen */
+.container__form__login {
+    display: flex;
+    color: #e6e3d9;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../images/field.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #e6e3d9;
+    width: 99%;
+    height:80%;
+    margin: 0 auto 4px auto;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    opacity: 1;
+
+}
+
+
+.container__form__frost {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    align-self: center;
+    background: inherit;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    
+
+}
+
+.container__form__frost:after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+    /* left position; */
+    right: 0;
+    top: -25px;  
+    /* top position  */
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    box-sizing: border-box;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    border-radius: 10px;
+    filter: url('#blur');
+    filter: blur(20px);
+    margin: 10px;
+    padding: 10px;
+}
+
+.div__form__login {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.form__login {
+    border-radius: 10px;
+}
+
+
+.form__login__buttons {
+    display: flex;
+    flex-flow: row;
+    justify-items: center;
+    width: auto;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+#gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #836997;
+  }
+
+  
+/* Body Main Container */
+.container__main {
+    display: flex;
+    color: dimgrey;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e6e3d9;
+    width: 99%;
+    height:80%;
+    margin: 0 auto 4px auto;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.container__main > * {
+    z-index: 100;
+}
+.container__main > div {
+    margin: 1vh 1vw;
+}
+
+/* main background image */
+img {
+    position: absolute;
+    width: 99%;
+    height: 77%;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+img::after {
+    z-index:-1;
+    background: linear-gradient(to bottom, rgba(149, 126, 204, 0.12) 40%,rgb(21, 24, 54) 100%);
+}
+
+
+/* News and Friends Middle Area */
+.container__main__middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e6e3d9;
+    color: rgb(5, 73, 10);
+    font-weight: 800;
+    font-style: oblique;
+    flex: 4 0 0;
+    width: 98%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* background-color: #e6e3d9; */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+
+/* Left and Rigtht Containers for Messages, Events, and Tasks */
+.container__main__left, .container__main__right {
+    flex: 2.5 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98%;
+    height: auto;
+    background-color: #e6e3d9;
+    color: rgb(5, 73, 10);
+    font-weight: 800;
+    font-style: oblique;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+}
+.container__main__left > div {
+    margin: 1vh 1vw;
+}
+
+/* Component Header Formatting */
+.messages__header, .news__header, .friends__header, .events__header, 
+.news__header, .tasks__header {
+    height: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 1vw;
+    
+}
+
+/* Form Container for Adding/Editing Component Items */
+.container__main__left--messages {
+    flex: 2 0 0;
+    margin: 5px 3px 5px 3px;
+    background-color: #e6e3d9;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+
+.div__welcome {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2em;
+}
+
+.div__welcome__inner {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Message List Area */
+.container__messages--saved {
+    flex: 6 0 0;
+    margin: 5px 3px 5px 3px;
+    color: rgb(53, 93, 131);
+    font-weight: 400;
+    font-style: normal;
+    background-color: #e6e3d9;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    overflow: auto;
+}
+
+
+/* Scroll bar formatting for all component areas */
+.scrollDiv::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.scrollDiv::-webkit-scrollbar {
+    width: 7px;
+	background-color: #F5F5F5;
+}
+
+.scrollDiv::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#95ABC7),
+									   to(#879180),
+									   color-stop(.6,#d68066))
+}
+
+/* News List Area */
+.container__main__middle--news {
+    flex: 7 0 0;
+    color: rgb(53, 93, 131);
+    font-weight: 400;
+    font-style: normal;
+    margin: 5px 3px 5px 3px;
+    margin-bottom: 5px;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+}
+
+/* Friends List Area */
+.container__main__middle--friends {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10vh 10vh 10vh; 
+    grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
+    justify-content: space-evenly;
+    flex: 4 0 0;
+    height: 100%;
+    width: auto;
+    margin: 5px 3px 5px 3px;
+    background-color: #e6e3d9;
+    color: rgb(53, 93, 131);
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+}
+
+/* Events and Tasks List Areas */
+.container__main__right--events, .container__main__right--tasks {
+    flex: 4 0 0;
+    margin: 5px 3px 5px 3px;
+    background-color: #e6e3d9;
+    color: rgb(53, 93, 131);
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    overflow: auto;
+
+}
+
+/* Controls formatting */
+input, select, button {
+    background-color: #FBEEC1;
+    border-radius: 5px;
+    border: 1px solid #8D8741;
+    box-sizing: border-box;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+  }
+
+.button {
+    font-size: .7em;
+    border-radius: 5px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+}
+
+/* Footer Formatting */
+.container__footer {
+    display: flex;
+    color: dimgrey;
+    flex-flow: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/walnut-nut-harvest-nuts.png); 
+    margin: 0 auto 0 auto;
+    width: 99%;
+    height:9%;
+    padding: 0 .5em 0 .5em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    justify-content: center;
+    background-color: "";
+    -moz-box-shadow: 5px 5px 5px rgba(124, 38, 11, 0.8);
+    -webkit-box-shadow: 5px 5px 5px rgba(105, 39, 9, 0.8);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.8);
+  }
+    
+  .body__footer {
+    display: flex;
+    flex-flow: row;
+      height: auto;
+      width: auto;
+      justify-content: center;
+      font-size: small;
+      color: #f3f3f3;
+  }
+  .footer__text {
+      flex: 1 0 100%;
+      height: auto;
+      width: auto;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .paragraph__footer__copyright {
+      margin: 0;
+      font-size: .8em;
+      justify-items: center;
+  }
+
+  
+  .button__footer__logout {
+      display: flex;
+      justify-self: flex-start;
+      width: fit-content;
+      margin: 0 auto 0 auto;
+      font-size: .8vw;
+  }
+
+
+/* All Sections Shared Items CSS Formatting */
+  .section__itemCard {
+    flex: 1 0 21%;
+    flex-basis: 21%;
+    font-size: .8em;
+    background-color: #e9e9e9;
+    box-sizing: border-box;
+    box-shadow:0 2px 6px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    margin: 2px 2px 2px 2px;
+    border-radius: 5px;
+  }
+ 
+
+ 
+  .section__itemCard > p {
+   font-size: .9vw;
+   padding:0.01em 3px;
+   margin: 2px 2px 2px 5px;
+  }
+
+  .header__itemCard > button {
+      font-size: .8em;
+  }
+
+  .header__itemCard {
+    display: flex;
+    justify-content: space-between;
+    font-size: 5vw;
+    font-weight: 400;
+    color:#201b22;
+    background-color:#c7c7c7;
+    margin: 0 2px;
+   }
+
+   /* Class for next occurring event */
+   .section__nextEvent {
+        flex: 1 0 21%;
+        flex-basis: 21%;
+        font-size: medium;
+        font-weight: 100;
+        box-sizing: border-box;
+        box-shadow:0 2px 6px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+        margin: 2px 2px 2px 2px;
+        border-radius: 5px;   
+        font-weight: 700;
+       background-color: #bcccdb;
+   }
+
+   .header__itemCard.section__nextEvent {
+    display: flex;
+    justify-content: space-between;
+    color:#201b22;
+    background-color:#95ABC7;
+    margin: 0 2px;
+   }
+
+/* Class for hiding  (duh) */
+  .hidden {
+      display: none;
+}
+
+
+/* Class for Save Discard ID Elements */
+#save_discard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Class for formatting friend item cards */
+.section__friend {
+    font-style: italic;
+    background-color: cornsilk;
+    
+}
